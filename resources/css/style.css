@@ -45,7 +45,6 @@ h2 {
 h3 {
   font-size: 1.5rem;
   font-weight: 700;
-  line-height: 1.5;
 }
 
 h4 {
@@ -61,6 +60,7 @@ p {
 
 a {
   color: #404243;
+  text-decoration: none;
 }
 
 a:hover {
@@ -163,10 +163,11 @@ header .mobile {
 .banner {
   display: flex;
   align-items: center;
-  background-color: #D1D1D1;
+  background-color: #C2DDFC;
+  border-bottom: 1px solid #DCDCDC;
 }
 
-.left .image {
+.banner .image {
   background-image: url("../images/banner.jpg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -197,7 +198,7 @@ header .mobile {
 /* Info Section */
 .info {
   display: flex;
-  align-items: center;
+  border-bottom: 1px solid #DCDCDC;
 }
 
 .info .image {
@@ -210,6 +211,10 @@ header .mobile {
   font-size: .8rem;
 }
 
+.info .right {
+  border-left: 1px solid #DCDCDC;
+}
+
 .section {
   display: flex;
   padding: 1rem;
@@ -219,6 +224,7 @@ header .mobile {
   background-size: contain;
   width: 148.05px;
 	height: 148.05px;
+  flex-shrink: 0;
 }
 
 .orientation.image {
@@ -232,6 +238,24 @@ header .mobile {
 .guest.image {
   background-image: url("../images/information-guest-lecture.jpg");
 }
+
+.section:first-child {
+	padding-top: 0;
+	margin-top: 2rem;
+}
+.section:last-child {
+	background-color: #C2DDFC;
+}
+
+.section .description {
+  width: 210.95px;
+  padding: 0 1rem;
+}
+
+.info p {
+  margin: .5rem 0;
+}
+
 /* Mobile Info Section */
 
 
