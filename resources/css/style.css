@@ -1,0 +1,218 @@
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v10/sDGTilo5QRsfWu6Yc11AXg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+
+/* Universal Styles */
+html {
+  font-family: "Ubuntu", Helvetica, sans-serif;
+  font-size: 16px;
+  color: #404243;
+}
+
+.main {
+  display: block;
+  padding-top: 4rem;
+}
+
+.left {
+	width: 60%;
+	padding: 2rem 1.5rem;
+}
+
+.right {
+	width: 40%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+h4 {
+  color: white;
+  padding: .5rem 0;
+}
+
+a {
+  color: #404243;
+}
+
+a:hover {
+  color: #2663A8;
+}
+
+
+/* Header */
+header {
+  display: flex;
+  height: 4rem;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  width: 100%;
+  position: fixed;
+}
+
+header img {
+  height: 32px;
+}
+
+header .logo {
+  display: flex;
+  justify-content: center;
+  padding-left: 1.5rem;
+}
+
+header .logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+header .logo p {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+header .logo span {
+  opacity: 0.5;
+  font-weight: 100;
+}
+
+header nav ul {
+  margin-right: .5rem;
+}
+
+header nav li {
+  margin-right: 1rem;
+  display: inline-block;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #404243;
+}
+
+header .mobile {
+  display: none;
+}
+
+/* Mobile Header*/
+@media only screen and (max-width: 768px)
+{
+  header {
+    justify-content: space-around;
+  }
+
+  header p, span, .desktop {
+    display: none;
+  }
+
+  header .logo {
+    width: 25%;
+    padding-left: 0;
+  }
+
+  header nav {
+    width: 75%;
+  }
+
+  header nav ul {
+    margin-right: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  header nav li {
+    margin-right: 0;
+  }
+
+  header .mobile {
+    display: block;
+  }
+}
+
+
+/* Banner */
+.banner {
+  display: flex;
+  align-items: center;
+  background-color: #D1D1D1;
+  height: 500px;
+}
+
+.banner .image {
+  background-image: url("../images/banner.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.banner .right {
+  margin-right: 5rem;
+}
+.banner .content {
+  margin: 2rem 1rem;
+}
+
+.banner .button {
+  width: 100%;
+  background-color: #404243;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+
+
+/* Mobile Banner */
+
+
+
+
+
+/* Info Section */
+
+
+
+/* Mobile Info Section */
+
+
+
+
+/* Courses Section */
+
+
+
+/* Mobile Courses Section */
+
+
+
+
+
+/* Thesis Section */
+
+
+
+/* Mobile Thesis Section */
+
+
+
+
+
+/* Footer */
+
+
+
+/* Mobile Footer */
