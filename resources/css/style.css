@@ -351,11 +351,89 @@ header .mobile {
 }
 
 /* Courses Section */
+.courses {
+  background-color: #C2DDFC;
+  padding: 2rem 0;
+  border-bottom: 1px solid #DCDCDC;
+}
+
+.courses h2 {
+  text-align: center;
+}
+
+.courses .desktop {
+  display: flex;
+  flex-direction: column;
+  margin: 0 4.5rem;
+}
+
+.courses .row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.course  {
+  background-color: white;
+  margin: 0 1rem;
+  width: 100%;
+}
+
+.course .photo {
+  background-size: cover;
+  height: 0;
+  padding-top: 50%;
+}
+
+.software .photo {
+  background-image: url("../images/course-software.jpg");
+}
+
+.computer-art .photo {
+  background-image: url("../images/course-computer-art.jpg");
+}
+
+.design .photo {
+  background-image: url("../images/course-design.jpg");
+}
+
+.data .photo {
+  background-image: url("../images/course-data.jpg");
+}
+
+.business .photo {
+  background-image: url("../images/course-business.jpg");
+}
+
+.marketing .photo {
+  background-image: url("../images/course-marketing.jpg");
+}
+
+.course .details {
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.details h4 {
+  color: #404243;
+  margin: .5rem 0;
+}
+.courses .mobile {
+  display: none;
+}
+
 
 
 
 /* Mobile Courses Section */
+@media only screen and (max-width: 768px) {
+  .courses .desktop {
+    display: none;
+  }
 
+  .courses .mobile {
+    display: flex;
+  }
+}
 
 
 
