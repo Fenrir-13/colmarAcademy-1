@@ -258,12 +258,12 @@ header .mobile {
   padding: 1rem;
 }
 
-.section:first-child {
+.info .section:first-child {
 	padding-top: 0;
 	margin-top: 2rem;
 }
 
-.section:last-child {
+.info .section:last-child {
 	background-color: #C2DDFC;
 }
 
@@ -467,17 +467,92 @@ header .mobile {
 
 
 /* Thesis Section */
+.thesis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #DCDCDC;
+}
 
+.thesis h2 {
+  text-align: center;
+  padding: 2rem 0;
+  margin: 0;
+}
+
+.thesis .content {
+  display: flex;
+  min-height: 1rem;
+}
+
+.thesis .left {
+  padding: 0 1.5rem 2rem 1.5rem;
+}
+
+.thesis video {
+  margin-bottom: 1.5rem;
+}
+
+.thesis h3 {
+  margin-bottom: .5rem;
+}
+
+.thesis .section {
+  padding: 0 1rem;
+}
+
+.thesis .section:first-child {
+	background-color: #C2DDFC;
+}
+
+.thesis .section:last-child {
+	padding-top: 1rem;
+}
+
+.fisma.pic {
+  background-image: url("../images/thesis-fisma.jpg");
+}
+
+.NY.pic {
+  background-image: url("../images/thesis-now-and-then.jpg");
+}
 
 
 /* Mobile Thesis Section */
-
-
+@media only screen and (max-width: 768px) {
+  .thesis .left {
+    width: 100%;
+    padding: 0;
+  }
+  .thesis .right, .thesis h3, .thesis p {
+    display: none;
+  }
+}
 
 
 
 /* Footer */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0 1rem 1.5rem;
+}
 
+footer nav li {
+  display: inline-block;
+  padding-right: 1rem;
+}
 
 
 /* Mobile Footer */
+@media only screen and (max-width: 768px) {
+  footer {
+    justify-content: center;
+    margin: 1rem 0;
+  }
+  
+  footer nav {
+    display: none;
+  }
+}
